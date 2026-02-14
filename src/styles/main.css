@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@source "../../pages/**/*.html";
+@source "../../components/**/*.html";
+@source "../../index.html";
+@source "../scripts/**/*.ts";
+
+/*
+ * Alpine.js x-cloak directive
+ * Hides elements until Alpine.js initializes
+ */
+[x-cloak] {
+  display: none !important;
+}
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #64748b;
+  --color-accent: #f59e0b;
+
+  --font-base: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Montserrat", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  /* Text reveal block overlay */
+  .block-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+
+  .block-reveal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .block-line,
+  [class^="block-line"] {
+    position: relative;
+    z-index: 0;
+  }
+}
