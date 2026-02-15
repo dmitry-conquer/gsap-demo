@@ -124,6 +124,8 @@ export default class HeroWindow {
             yPercent: -progress * HERO_CONFIG.sky.yMovementMultiplier,
           });
           gsap.set(skyContainer, { y: -progress * skyMoveDistance });
+
+          gsap.set(windowEl, { opacity: progress >= 1 ? 0 : 1 });
         },
       },
     });
@@ -158,5 +160,3 @@ export default class HeroWindow {
     return scaleEnd;
   }
 }
-
-

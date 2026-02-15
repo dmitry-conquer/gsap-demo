@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const initSmoothScroll = () => {
-  const lenis = new Lenis({ lerp: 0.04 });
+  const lenis = new Lenis({ lerp: 0.07 });
 
   lenis.on("scroll", ScrollTrigger.update);
 

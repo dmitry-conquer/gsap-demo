@@ -18,8 +18,8 @@
   --color-secondary: #64748b;
   --color-accent: #f59e0b;
 
-  --font-base: "Montserrat", ui-sans-serif, system-ui, sans-serif;
-  --font-accent: "Montserrat", ui-serif, Georgia, serif;
+  --font-base: "Orbitron", ui-sans-serif, system-ui, sans-serif;
+  --font-accent: "Orbitron", ui-serif, Georgia, serif;
 }
 
 @layer base {
